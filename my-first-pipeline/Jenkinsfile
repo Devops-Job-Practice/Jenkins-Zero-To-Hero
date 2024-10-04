@@ -12,7 +12,7 @@ pipeline {
       steps {
         sh 'npm install'
         sh 'npm run build'
-        sh ' kubectl apply -f deployment.yml'
+        sh 'kubectl apply -f deployment.yml'
       }
     }
   }
